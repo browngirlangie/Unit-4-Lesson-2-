@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping List App</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style type="text/css">
+		*, html {
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+			color: #272727;
+		}
+
+		body {
+			background: linear-gradient(90deg, rgba(255,0,0,0.8), rgba(0,0,255,0.8)), url("topography.svg");
+			font-family: "Open Sans", sans-serif;
+		}
+
+		.container {
+			background: gold;
+			width: 600px;
+			margin: auto;
+			margin-top: 30px;
+			box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+			padding: 30px;
+		}
+
+		li {
+			list-style: none;
+			margin: 0px;
+			padding: 16px;
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
+			background: #FFFFFA;
+		}
+
+		li:hover {
+			background: #EFEFEF;
+			cursor: pointer;
+		}
+
+		ul {
+			list-style: none;
+			list-style-position: inside;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		h1 {
+			margin-bottom: 25px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Shopping List</h1>
+
+		<!-- Don't change any code above this line. -->
+		<!-- Insert your list here. -->
+	
+
+
+
+		<!-- Don't change any code below this line. -->
+	</div>
+
+	<script type="text/javascript">
+		let list_items = document.querySelectorAll('li');
+		list_items.forEach(item => item.addEventListener('click', function(e) {
+			e.preventDefault();
+			this.remove();
+		}))
+	</script>
+</body>
+</html>
